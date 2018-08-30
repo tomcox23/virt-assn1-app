@@ -18,10 +18,10 @@ def vote():
         vt = request.form.get('vote')
         redis.incr(vt)
 
-    #yes_votes = redis.get('yes')
-    #no_votes = redis.get('no')
-    #correct_votes = redis.get('no_one')
-    return render_template('results.html', yes_votes=0, no_votes=0, correct_votes=10)
+    yes_votes = redis.get('yes')
+    no_votes = redis.get('no')
+    correct_votes = redis.get('no_one')
+    return render_template('results.html', yes_votes=yes_votes, no_votes=no_votes, correct_votes=correct_votes)
 
         
 
