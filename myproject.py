@@ -7,6 +7,8 @@ redis.set('yes', 0)
 redis.set('no', 0)
 redis.set('no_one', 0)
 
+#test comment
+
 @application.route("/")
 def hello():
     return render_template('form.html')
