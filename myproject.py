@@ -7,7 +7,7 @@ redis.set('yes', 0)
 redis.set('no', 0)
 redis.set('no_one', 0)
 
-#test comment
+#test comment2
 
 @application.route("/")
 def hello():
